@@ -1,0 +1,47 @@
+$first: #0e2431;
+
+$lightbrown: #6b645c;
+$darkbrown: #3b3834;
+$lightbrown2: #7e767c;
+$color1: #393632;
+$color2: #bfbfb1;
+$color3: #8c8c73;
+
+.preloader {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1d1714;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    overflow: hidden;
+    border-radius: 0;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+        // height: 4rem;
+        // width: 25rem;
+        font-size: 1.5rem;
+        font-weight: 800;
+        // overflow: hidden;
+        color: $color2;
+
+        .text{
+            overflow: hidden;
+            height: 4rem;
+        }
+        .text{
+            overflow: hidden;
+            height: 3rem;
+        }
+    }
+}

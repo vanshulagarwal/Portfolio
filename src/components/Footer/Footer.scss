@@ -1,0 +1,38 @@
+
+$first: #0e2431;
+
+$lightbrown: #6b645c;
+$darkbrown: #3b3834;
+$lightbrown2: #7e767c;
+$color1: #393632;
+$color2: #bfbfb1;
+$color3: #8c8c73;
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+
+    .left{
+        font-size: 1rem;
+    }
+    .right {
+        display: flex;
+        gap: 1rem;
+
+        a {
+            color: $lightbrown;
+            transition: all 0.2s ease-in-out;
+            display: flex;
+
+            svg {
+                font-size: 1.5rem;
+            }
+
+            &:hover {
+                color: $darkbrown;
+            }
+        }
+    }
+}

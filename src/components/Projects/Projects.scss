@@ -1,0 +1,131 @@
+$first: #0e2431;
+
+$lightbrown: #6b645c;
+$darkbrown: #3b3834;
+$lightbrown2: #7e767c;
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    padding-top: 5rem;
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3.5rem;
+
+        .eachProject {
+            width: 30rem;
+            height: auto;
+            padding: 1rem;
+            color: $darkbrown;
+
+            .eachProjectImgs {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    // height: 5rem;
+                    // max-height: 250px;
+                    object-fit: contain;
+                    // border-radius: 0.5rem;
+                    // margin-bottom: 1.5rem;
+                }
+            }
+
+            .eachProjectHeading {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 1rem;
+                flex-wrap: wrap;
+
+                h3 {
+                    font-size: 1.5rem;
+                }
+
+                .techStack {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+
+                    span {
+                        img {
+                            width: 2rem;
+                            border-radius: 0.5rem;
+                            background-size: contain;
+                            background-position: center;
+                            background-color: transparent;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+
+            .eachProjectDetail {
+                .desc {
+                    font-size: 1rem;
+                    margin-bottom: 1rem;
+                }
+
+                .projectLinks {
+                    display: flex;
+                    gap: 1rem;
+
+                    a {
+                        flex: 1;
+                        margin-top: 0.25rem;
+                        border-radius: 1rem;
+                        width: 100%;
+                        text-decoration: none;
+                        border-radius: 0.5rem;
+
+                        div {
+                            font-size: 1rem;
+                            background-color: black;
+                            display: flex;
+                            color: white;
+                            align-items: center;
+                            border-radius: 0.5rem;
+                            padding: 0.5rem;
+                            gap: 0.5rem;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:700px) {
+        .content {
+            .eachProject {
+                width: 25rem;
+
+                .eachProjectHeading {
+                    h3 {
+                        font-size: 1.3rem;
+                    }
+
+                    .techStack {
+                        gap: 0.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:500px) {
+        .content {
+            .eachProject {
+                width: 22rem;
+            }
+        }
+    }
+}

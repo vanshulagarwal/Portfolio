@@ -1,0 +1,146 @@
+$first: #0e2431;
+
+$lightbrown: #6b645c;
+$darkbrown: #3b3834;
+$lightbrown2: #7e767c;
+$color1: #393632;
+$color2: #bfbfb1;
+$color3: #8c8c73;
+
+.experience {
+    padding: 5rem 2rem 0;
+
+    .section-title-01 {
+        font-size: 3.5rem;
+    }
+
+    .section-title-02 {
+        &::before {
+            content: '';
+            position: absolute;
+            width: 0rem;
+            height: 0rem;
+            // right: 0;
+            bottom: 0;
+            background-color: $darkbrown;
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // margin: 20px;
+        // width: 100%;
+
+        .buttons {
+            // border: 2px solid $darkbrown;
+            // border-radius: 1rem;
+            display: flex;
+            gap: 1rem;
+
+            button {
+                font: inherit;
+                padding: 0.5rem 1rem;
+                background-color: transparent;
+                border: 2px solid $darkbrown;
+                border-radius: 0.5rem;
+                transition: background-color 0.3s ease;
+
+                &.active {
+                    background-color: $darkbrown;
+                    color: white;
+                }
+            }
+        }
+
+        .child-divs {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            height: 33rem;
+            /* Adjust height as needed */
+
+            .child-div {
+                width: 100%;
+                position: absolute;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .my-card {
+                // box-shadow: 0 0 5px 0px $color1;
+                filter: none;
+                transition: all 0.2s ease-in-out;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:hover {
+                    filter: none;
+                }
+
+                &::before {
+                    content: '';
+                    height: 0;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    width: 0;
+                    z-index: -1;
+                    border: 0px solid #3b3834;
+                    border-radius: 4px;
+                }
+
+                header {
+                    h1 {
+                        color: $darkbrown;
+                    }
+                }
+
+            }
+
+            .my-card-title {
+                color: #6b645c;
+                margin: 0;
+            }
+
+            .my-card-subtitle {
+                color: #7e767c;
+            }
+
+            .my-card-text {
+                color: #7e767c;
+                margin: 0;
+                padding: 0.5rem;
+                padding-top: 0;
+
+                p {
+                    color: #7e767c;
+                }
+            }
+        }
+
+    }
+
+    @media (max-width:500px) {
+        .section-title-01 {
+            font-size: 3rem;
+        }
+
+        .wrapper {
+            .child-divs {
+                height: 36rem;
+            }
+
+            .buttons {
+                gap: 0.5rem;
+            }
+        }
+    }
+
+
+}

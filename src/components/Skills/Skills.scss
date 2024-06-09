@@ -1,0 +1,43 @@
+$first: #0e2431;
+
+$lightbrown: #6b645c;
+$darkbrown: #3b3834;
+$lightbrown2: #7e767c;
+
+.skills {
+    padding: 5rem 2rem 5rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .allSkills {
+        max-width: 1100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        // margin-top: 2rem;
+
+        .eachSkill {
+            border: 2px solid black;
+            border-radius: 0.6rem;
+            height: 3rem;
+            padding: 0.5rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            img {
+                width: 2rem;
+            }
+        }
+    }
+    @media (max-width:700px) {
+        .allSkills{
+            gap: 0.75rem;
+        }
+    }
+}
