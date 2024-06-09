@@ -3,6 +3,7 @@ import './Contact.scss';
 import emailjs from '@emailjs/browser';
 import { FaEnvelope, FaPaperPlane, FaPhone, FaWhatsapp } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { LuPartyPopper } from "react-icons/lu";
 
 const Contact = ({ addBtnRef }) => {
     const btnRefs = useRef([]);
@@ -135,7 +136,7 @@ const Contact = ({ addBtnRef }) => {
                                         : error
                                             ? "Something went wrong"
                                             : success
-                                                ? <>Sent Successfully</>
+                                                ? <><LuPartyPopper />Sent Successfully</>
                                                 : <><FaPaperPlane />Send Message</>
                                     }
                                 </span>

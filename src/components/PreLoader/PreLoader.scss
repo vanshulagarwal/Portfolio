@@ -28,20 +28,21 @@ $color3: #8c8c73;
         align-items: center;
         justify-content: space-between;
         gap: 0.5rem;
-        // height: 4rem;
-        // width: 25rem;
         font-size: 1.5rem;
         font-weight: 800;
-        // overflow: hidden;
         color: $color2;
 
-        .text{
+        .text {
             overflow: hidden;
-            height: 4rem;
+            height: 3.5rem;
         }
-        .text{
-            overflow: hidden;
-            height: 3rem;
+
+        @media (max-width:450px) {
+            font-size: 1.25rem;
+
+            .text {
+                height: 3rem;
+            }
         }
     }
 }

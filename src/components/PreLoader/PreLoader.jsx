@@ -28,7 +28,7 @@ const PreLoader = () => {
                             duration: 0.7,
                             ease: "easeOut"
                         }}
-                    >Vanshul</motion.h1>
+                    >Vanshul Agarwal</motion.h1>
                 </div>
                 <div className='text'>
                     <motion.h3
