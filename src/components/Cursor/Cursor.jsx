@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 
-const Cursor = ({ btnRefs }) => {
+const Cursor = ({ btnRefs, isUpdated }) => {
     const cursordivref = useRef();
     const cursordivOuterref = useRef();
     const [isHovering, setIsHovering] = useState(false);
@@ -63,7 +63,7 @@ const Cursor = ({ btnRefs }) => {
                 }
             });
         };
-    }, [handleMouseEnter, handleMouseLeave]);
+    }, [handleMouseEnter, handleMouseLeave, isUpdated]);
 
 
 
