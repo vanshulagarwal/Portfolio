@@ -1,7 +1,7 @@
 import { FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 import './Home.scss';
-import Resume from "../../assets/Resume.pdf";
+import Resume from "../../assets/Vanshul Agarwal.pdf";
 import avatar6 from '../../assets/avatar6.png';
 import img1 from '../../assets/img1.svg'
 import img2 from '../../assets/img2.png'

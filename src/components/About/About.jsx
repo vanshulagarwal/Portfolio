@@ -13,51 +13,44 @@ const About = () => {
                 <h2 className="section-title-02">About</h2>
                 <div className="content">
                     <div className="aboutList">
-                        <motion.div className="eachItem playing"
+                        {/* <motion.div className="eachItem"
                             initial={{ opacity: 0, }}
                             whileInView={{ opacity: 1, }}
                             transition={{ duration: 0.5 }}
                         >
-                            <div className="image"></div>
-                            <div className="wave"></div>
-                            <div className="wave"></div>
-                            <div className="wave"></div>
                             <div className="infotop">
                                 <BsStack />
                                 <div>Full Stack Developer</div>
                                 <div className="desc">Seamlessly integrating front-end finesse with robust back-end solutions for holistic excellence. Dedicated to driving innovation and delivering impactful experiences across the entire development stack. </div>
                             </div>
-                        </motion.div>
-                        <motion.div className="eachItem playing"
-                            initial={{ opacity: 0, }}
-                            whileInView={{ opacity: 1, }}
-                            transition={{ duration: 0.5 }}
-                        >
-                            <div className="image"></div>
-                            <div className="wave"></div>
-                            <div className="wave"></div>
-                            <div className="wave"></div>
-                            <div className="infotop">
-                                <IoSettings />
-                                <div>Backend Developer</div>
-                                <div className="desc">Crafting scalable infrastructures and optimizing database performance for seamless data management. Committed to delivering secure, reliable server-side solutions that power mission-critical applications. </div>
+                        </motion.div> */}
+                        <div class="eachItem">
+                            <div class="eachItemWrapper">
+                                <div class="info">
+                                    <BsStack />
+                                    <div>Full Stack Developer</div>
+                                    <div className="desc">Seamlessly integrating front-end finesse with robust back-end solutions for holistic excellence. Dedicated to driving innovation and delivering impactful experiences across the entire development stack. </div>
+                                </div>
                             </div>
-                        </motion.div>
-                        <motion.div className="eachItem playing"
-                            initial={{ opacity: 0, }}
-                            whileInView={{ opacity: 1, }}
-                            transition={{ duration: 0.5 }}
-                        >
-                            <div className="image"></div>
-                            <div className="wave"></div>
-                            <div className="wave"></div>
-                            <div className="wave"></div>
-                            <div className="infotop">
-                                <IoColorPalette />
-                                <div>Frontend Developer</div>
-                                <div className="desc">Designing captivating user interfaces with pixel-perfect precision, ensuring seamless experiences across devices. Passionate about pushing the boundaries of creativity and usability in every frontend masterpiece. </div>
+                        </div>
+                        <div class="eachItem">
+                            <div class="eachItemWrapper">
+                                <div class="info">
+                                    <IoSettings />
+                                    <div>Backend Developer</div>
+                                    <div className="desc">Crafting scalable infrastructures and optimizing database performance for seamless data management. Committed to delivering secure, reliable server-side solutions that power mission-critical applications. </div>
+                                </div>
                             </div>
-                        </motion.div>
+                        </div>
+                        <div class="eachItem">
+                            <div class="eachItemWrapper">
+                                <div class="info">
+                                    <IoColorPalette />
+                                    <div>Frontend Developer</div>
+                                    <div className="desc">Designing captivating user interfaces with pixel-perfect precision, ensuring seamless experiences across devices. Passionate about pushing the boundaries of creativity and usability in every frontend masterpiece. </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
