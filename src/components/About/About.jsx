@@ -24,30 +24,26 @@ const About = () => {
                                 <div className="desc">Seamlessly integrating front-end finesse with robust back-end solutions for holistic excellence. Dedicated to driving innovation and delivering impactful experiences across the entire development stack. </div>
                             </div>
                         </motion.div> */}
-                        <div class="eachItem">
-                            <div class="eachItemWrapper">
-                                <div class="info">
-                                    <BsStack />
-                                    <div>Full Stack Developer</div>
-                                    <div className="desc">Seamlessly integrating front-end finesse with robust back-end solutions for holistic excellence. Dedicated to driving innovation and delivering impactful experiences across the entire development stack. </div>
+                        <div class="cards-container">
+                            <div class="card">
+                                <div class="iconContainer"><BsStack className='icon' /></div>
+                                <div class="content">
+                                    <h2>Full Stack Developer</h2>
+                                    <p>Masterfully bridging elegant front-end interfaces with robust back-end systems for comprehensive solutions. Dedicated to driving innovation and delivering impactful experiences across the entire development stack.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="eachItem">
-                            <div class="eachItemWrapper">
-                                <div class="info">
-                                    <IoSettings />
-                                    <div>Backend Developer</div>
-                                    <div className="desc">Crafting scalable infrastructures and optimizing database performance for seamless data management. Committed to delivering secure, reliable server-side solutions that power mission-critical applications. </div>
+                            <div class="card">
+                                <div class="iconContainer"><IoSettings className='icon' /></div>
+                                <div class="content">
+                                    <h2>DSA Enthusiast</h2>
+                                    <p>Solving complex problems with precision and efficiency through data structures and algorithms. Dedicated to optimizing solutions and tackling challenges across competitive programming platforms with unwavering focus. </p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="eachItem">
-                            <div class="eachItemWrapper">
-                                <div class="info">
-                                    <IoColorPalette />
-                                    <div>Frontend Developer</div>
-                                    <div className="desc">Designing captivating user interfaces with pixel-perfect precision, ensuring seamless experiences across devices. Passionate about pushing the boundaries of creativity and usability in every frontend masterpiece. </div>
+                            <div class="card">
+                                <div class="iconContainer"><IoColorPalette className='icon' /></div>
+                                <div class="content">
+                                    <h2>Freelancer</h2>
+                                    <p>Delivering tailor-made solutions with a client-first approach, blending creativity with technical expertise. Passionate about crafting exceptional projects that leave a lasting impact while ensuring seamless collaboration and satisfaction.</p>
                                 </div>
                             </div>
                         </div>

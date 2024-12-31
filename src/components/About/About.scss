@@ -16,7 +16,7 @@ $lightbrown2: #7e767c;
         align-items: center;
 
         .content {
-            width: 100%;
+            // width: 100%;
 
             .aboutDescription {
                 h3 {
@@ -26,81 +26,112 @@ $lightbrown2: #7e767c;
             }
 
             .aboutList {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 3rem;
-                flex-wrap: wrap;
-
-                .eachItem {
-                    transform-style: preserve-3d;
-                    width: 15rem;
-                    height: 21rem;
-                    box-shadow: 0px 0px 10px 1px #000000ee;
-                    border-radius: 5px;
-                }
-
-                .eachItemWrapper {
-                    background-color: #e5e5e0;
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 5px;
-                    justify-content: center;
+                .cards-container {
                     display: flex;
-                    align-items: center;
-                    overflow: hidden;
-
-                    &::before {
-                        position: absolute;
-                        content: ' ';
-                        width: 160px;
-                        height: 125%;
-                        background: linear-gradient(90deg, transparent, $darkbrown, $darkbrown, $darkbrown, $darkbrown, transparent);
-                        animation: rotation_481 5000ms infinite linear;
-                    }
-                }
-
-
-                .info {
-                    position: absolute;
-                    width: 98%;
-                    height: 99%;
-                    background-color: #e5e5e0;
-                    border-radius: 5px;
-                    color: $darkbrown;
-
-                    display: flex;
-                    flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    gap: 1rem;
-                    text-align: center;
-                    font-size: 1.25rem;
-                    font-weight: 600;
-                    padding: 1rem;
+                    flex-wrap: wrap;
 
-                    svg {
-                        font-size: 4rem;
-                        // padding-bottom: 1rem;
+
+                    .card {
+                        position: relative;
+                        width: 16rem;
+                        height: 22.5rem;
+                        margin: 1.5rem;
+                        background-color: blueviolet;
+                        border-radius: 20px;
+                        border-bottom-left-radius: 160px;
+                        border-bottom-right-radius: 160px;
+                        box-shadow:
+                            0 15px 0 white,
+                            inset 0 -15px 0 rgba(255, 255, 255, 0.25),
+                            0 45px 0 rgba(0, 0, 0, 0.15);
+                        overflow: hidden;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        background: #85796c;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: -140px;
+                            left: -40%;
+                            width: 100%;
+                            height: 120%;
+                            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2));
+                            transform: rotate(35deg);
+                            pointer-events: none;
+                            filter: blur(5px);
+                        }
+
+                        .iconContainer {
+                            position: relative;
+                            width: 120px;
+                            height: 100px;
+                            background-image: url('../../assets//bgimage.png');
+                            border-bottom-left-radius: 100px;
+                            border-bottom-right-radius: 100px;
+                            box-shadow:
+                                0 10px 0 rgba(0, 0, 0, 0.1),
+                                inset 0 -8px 0 white;
+                            z-index: 10;
+                            display: flex;
+                            justify-content: center;
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: -50px;
+                                width: 50px;
+                                height: 45px;
+                                background: transparent;
+                                border-top-right-radius: 50px;
+                                box-shadow: 15px -15px 0 15px #e8e8e3;
+                            }
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                right: -50px;
+                                width: 50px;
+                                height: 45px;
+                                background: transparent;
+                                border-top-left-radius: 50px;
+                                box-shadow: -15px -15px 0 15px #e8e8e3;
+                            }
+
+                            .icon {
+                                color: $darkbrown;
+                                position: relative;
+                                top: 1.5rem;
+                                font-size: 3rem;
+                            }
+                        }
+
+                        .content {
+                            position: absolute;
+                            width: 100%;
+                            padding: 1.2rem;
+                            padding-top: 7.25rem;
+                            text-align: center;
+
+                            h2 {
+                                font-size: 1.25rem;
+                                color: white;
+                                margin-bottom: 0.5rem;
+                            }
+
+                            p {
+                                color: white;
+                                font-size: 0.9rem;
+                                line-height: 1.25em;
+                            }
+                        }
                     }
                 }
-
-                @keyframes rotation_481 {
-                    0% {
-                        transform: rotateZ(0deg);
-                    }
-
-                    0% {
-                        transform: rotateZ(360deg);
-                    }
-                }
-
-                .desc {
-                    font-size: 0.9rem;
-                    font-weight: 100;
-                }
-
             }
         }
     }
