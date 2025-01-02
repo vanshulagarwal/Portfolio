@@ -53,16 +53,16 @@ const Home = ({ addBtnRef }) => {
                             transition={{ duration: 0.5, delay: 1.2 }}
                         >
                             <div className="desc">
-                                An innovative full stack web developer fluent in the MERN stack, I excel in both frontend and backend development. I thrive on crafting pixel-perfect frontend interfaces and engineering robust backend systems.
+                                An innovative full stack web developer proficient in the MERN stack, I excel in both front-end and back-end development. I thrive on crafting pixel-perfect frontend interfaces and engineering robust back-end systems.
                             </div>
                             <div className="buttons">
-                                <a href={Resume} download="VanshulAgarwal.pdf"
+                                <a href={import.meta.env.VITE_RESUME_URL} target='_blank'
                                     ref={(el) => (btnRefs.current.push(el))}>
                                     <button className='btn'>
                                         <span className='btnAnimation'>
                                             <span></span>
                                         </span>
-                                        <span className='btnText'>Download CV</span>
+                                        <span className='btnText'>View Resume</span>
                                     </button>
                                 </a>
                                 <a href="#contact"
