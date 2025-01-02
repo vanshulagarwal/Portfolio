@@ -4,6 +4,9 @@ $lightbrown: #6b645c;
 $darkbrown: #3b3834;
 $lightbrown2: #7e767c;
 
+$color1: #393632;
+$color2: #bfbfb1;
+$color3: #8c8c73;
 
 .about {
     position: relative;
@@ -50,7 +53,8 @@ $lightbrown2: #7e767c;
                         display: flex;
                         justify-content: center;
                         align-items: flex-start;
-                        background: #85796c;
+                        background: $color2;
+                        //#85796c
 
                         &::before {
                             content: '';
@@ -120,12 +124,12 @@ $lightbrown2: #7e767c;
 
                             h2 {
                                 font-size: 1.25rem;
-                                color: white;
+                                color: $darkbrown;
                                 margin-bottom: 0.5rem;
                             }
 
                             p {
-                                color: white;
+                                color: $darkbrown;
                                 font-size: 0.9rem;
                                 line-height: 1.25em;
                             }

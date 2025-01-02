@@ -36,6 +36,28 @@ import img31 from '../assets/project/31.png';
 import img32 from '../assets/project/32.png';
 import img33 from '../assets/project/33.png';
 import img34 from '../assets/project/34.png';
+import img41 from '../assets/project/41.png';
+import img42 from '../assets/project/42.png';
+import img43 from '../assets/project/43.png';
+import img44 from '../assets/project/44.png';
+import img45 from '../assets/project/45.png';
+import img46 from '../assets/project/46.png';
+import img47 from '../assets/project/47.png';
+import img51 from '../assets/project/51.png';
+import img52 from '../assets/project/52.png';
+
+import contest from '../assets/flaticon/contest.gif'
+import chart from '../assets/flaticon/chart.gif'
+import upRightArrow from '../assets/flaticon/up-right-arrow.gif'
+import militaryMedal from '../assets/flaticon/military-medal.gif'
+import ratings from '../assets/flaticon/ratings.gif'
+import question from '../assets/flaticon/question.gif'
+import bestQuality from '../assets/flaticon/best-quality.gif'
+import blackFriday from '../assets/flaticon/black-friday.gif'
+import views from '../assets/flaticon/views.gif'
+import contribution from '../assets/flaticon/contribution.gif'
+import repository from '../assets/flaticon/repository.gif'
+import streak from '../assets/flaticon/streak.gif'
 
 
 const navLinks = [
@@ -50,6 +72,10 @@ const navLinks = [
     {
         name: "Projects",
         hash: "#projects",
+    },
+    {
+        name: "Coding",
+        hash: "#coding",
     },
     {
         name: "Skills",
@@ -67,8 +93,16 @@ const navLinks = [
 
 const projectData = [
     {
+        projectName: "Codaez",
+        projectDesc: "A platform for self-analysis and competition integrating data from LeetCode, Codeforces, and CodeChef. Utilized GitHub Actions for scheduled data refresh. Features include Leaderboard with min-max normalization, performance tracking, upcoming contests calendar, follow requests, etc.",
+        techStack: [react, redux, node, express, sass],
+        projectImg: [img41, img42, img43, img44, img45, img46, img47],
+        projectRepo: 'https://github.com/vanshulagarwal/Codaez',
+        projectUrl: "https://codaez.onrender.com/",
+    },
+    {
         projectName: "VASHOP",
-        projectDesc: "E-commerce platform built with with MERN stack. User-friendly features such as search, Redux-managed cart and user state, user reviews, product filters, and MongoDB Atlas for scalable data.",
+        projectDesc: "E-commerce platform built with MERN stack.  Implemented User Authentication with JSON Web Tokens (JWT). User-friendly features such as search, Redux-managed cart and user state, user reviews, product filters, and MongoDB Atlas for scalable data.",
         techStack: [react, redux, node, express, sass],
         projectImg: [img1, img2, img3, img6, img4, img5, img8],
         projectRepo: 'https://github.com/vanshulagarwal/VASHOP-client',
@@ -81,6 +115,13 @@ const projectData = [
         projectImg: [img11, img12, img13],
         projectRepo: 'https://github.com/vanshulagarwal/ListKeeper',
         projectUrl: "https://listkeeper.onrender.com/",
+    },
+    {
+        projectName: "Shipment Logistic Optimizer",
+        projectDesc: "Optimizes the logistics of shipments across various ports using algorithms like Floyd-Warshall, 0/1 Knapsack and KMP String Matching. Calculates the best routes, transportation costs, and generates digital invoices.",
+        techStack: [cpp],
+        projectImg: [img51, img52],
+        projectRepo: 'https://github.com/vanshulagarwal/ShipmentLogisticOptimizer',
     },
     {
         projectName: "Yelpcamp",
@@ -213,4 +254,100 @@ const certificationsData = [
     },
 ];
 
-export { navLinks, projectData, skillsData, educationData, certificationsData };
+const codingProfilesData = {
+    codeforces: [
+        {
+            image: contest,
+            heading: "Contests",
+            data: "23",
+        },
+        {
+            image: question,
+            heading: "Submissions",
+            data: 672,
+        },
+        {
+            image: chart,
+            heading: "Rating",
+            data: 1310,
+        },
+        {
+            image: upRightArrow,
+            heading: "Max Rating",
+            data: 1339,
+        },
+        {
+            image: militaryMedal,
+            heading: "Rank",
+            data: "Pupil",
+        },
+        {
+            image: ratings,
+            heading: "Max Rank",
+            data: "Pupil",
+        },
+    ],
+
+    leetcode: [
+        {
+            image: contest,
+            heading: "Contests",
+            data: "32",
+        },
+        {
+            image: question,
+            heading: "Problems",
+            data: 680,
+        },
+        {
+            image: chart,
+            heading: "Rating",
+            data: 1732,
+        },
+        {
+            image: upRightArrow,
+            heading: "Max Rating",
+            data: 1803,
+        },
+        // {
+        //     image: militaryMedal,
+        //     heading: "Rank",
+        //     data: 70157,
+        // },
+        // {
+        //     image: bestQuality,
+        //     heading: "Badge",
+        //     data: "Knight",
+        // },
+        {
+            image: blackFriday,
+            heading: "Top %",
+            data: 10.85,
+        },
+    ],
+
+    github: [
+        {
+            image: contribution,
+            heading: "Contributions",
+            data: 409,
+        },
+        {
+            image: streak,
+            heading: "Max Streak",
+            data: 19,
+        },
+        {
+            image: repository,
+            heading: "Repositories",
+            data: 31,
+        },
+        {
+            image: views,
+            heading: "Views",
+            data: "800+",
+        },
+    ]
+}
+
+export { navLinks, projectData, skillsData, educationData, certificationsData, codingProfilesData };

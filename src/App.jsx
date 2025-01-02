@@ -9,6 +9,7 @@ import Cursor from './components/Cursor/Cursor'
 import { useRef, useState } from 'react'
 import PreLoader from './components/PreLoader/PreLoader'
 import Footer from './components/Footer/Footer'
+import Coding from './components/Coding/Coding'
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
       <Navbar addBtnRef={addBtnRef} />
       <Home addBtnRef={addBtnRef} />
       <About />
+      <Coding addBtnRef={addBtnRef}/>
       <Projects addBtnRef={addBtnRef} />
       <Skills addBtnRef={addBtnRef} />
       {/* <Experience addBtnRef={addBtnRef} /> */}

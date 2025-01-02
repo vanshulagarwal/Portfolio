@@ -1,0 +1,190 @@
+$first: #0e2431;
+
+$lightbrown: #6b645c;
+$darkbrown: #3b3834;
+$lightbrown2: #7e767c;
+$color1: #393632;
+$color2: #bfbfb1;
+$color3: #8c8c73;
+$color4: rgba(255, 255, 255, 0.25);
+
+.coding {
+    position: relative;
+    padding: 2rem;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                background: $color2;
+                position: relative;
+                width: 17rem;
+                height: 24rem;
+                margin: 1.5rem;
+                border-radius: 20px;
+                border-bottom-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+                box-shadow:
+                    0 15px 0 white,
+                    inset 0 -15px 0 rgba(255, 255, 255, 0.25),
+                    0 45px 0 rgba(0, 0, 0, 0.15);
+                padding: 3.5rem 0 2rem 0;
+
+                .iconContainer {
+                    background-color:#d8d8d8;
+                    border-radius: 200px;
+                    height: 5rem;
+                    width: 5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: 0;
+                    left: calc(50% - 2.5rem);
+                    top: -2.5rem;
+                    box-shadow: 0px -4px 14px 0 #8c8c73;
+                    
+                    .imgContainer {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        // background-color: $color4;
+                        border-radius: 100px;
+                        height: 4rem;
+                        width: 4rem;
+
+                        img {
+                            height: 3rem;
+                            width: auto;
+                            max-width: 3rem;
+                        }
+                    }
+
+                    // .codeforces{
+                    //     background-color: green;
+                    // }
+                    // .leetcode{
+                    //     background-color: red;
+                    // }
+                    // .codechef{
+                    //     background-color: yellow;
+                    // }
+
+                    .bottomCorner {
+                        background-color: #d8d8d8;
+                        position: absolute;
+                        width: 1rem;
+                        height: 1rem;
+                        bottom: -0.75rem;
+                        left: calc(50% - 0.5rem);
+                        border-bottom-left-radius: 100px;
+                        border-bottom-right-radius: 100px;
+                    }
+                }
+
+                .cardHeader {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    width: 100%;
+
+                    .platformName {
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        color: $darkbrown;
+                    }
+
+                    .username {
+                        font-size: 0.9rem;
+                        border-radius: 10px;
+                        background-color: #d8d8d8;
+                        color: $darkbrown;
+                        padding: 0.1rem 0.35rem;
+                    }
+                }
+
+                .content {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-around;
+                    padding: 0.25rem;
+
+                    .eachDetail {
+                        margin: 0.125rem;
+                        width: calc(50% - 0.25rem);
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5rem;
+                        background-color: #d8d8d8;
+                        border-radius: 0.5rem;
+                        padding: 0.25rem 0.5rem;
+
+                        img {
+                            height: 1.75rem;
+                        }
+
+                        .detailcontent {
+                            display: flex;
+                            flex-direction: column;
+
+                            .heading {
+                                font-size: 0.8rem;
+                                color: #828282;
+                            }
+
+                            .data {
+                                font-size: 1.1rem;
+                                font-weight: 600;
+                                color: $darkbrown;
+                            }
+                        }
+                    }
+                }
+
+                .profileButton {
+
+                    a {
+                        border-radius: 1rem;
+                        width: 100%;
+                        text-decoration: none;
+                        border-radius: 0.5rem;
+                        
+                        div {
+                            // border: 0.1rem solid $color1;
+                            box-shadow: 0 3px 3px 0 rgb(59, 56, 52, 0.5);
+                            font-size: 1rem;
+                            background-color: #d8d8d8;
+                            display: flex;
+                            color: $darkbrown;
+                            align-items: center;
+                            border-radius: 0.5rem;
+                            padding: 0.4rem 2rem;
+                            gap: 0.5rem;
+                            justify-content: center;
+                        }
+                    }
+                }
+
+                @media (max-width:1040px) {
+                    margin-top: 5rem;
+                }
+            }
+        }
+    }
+}
