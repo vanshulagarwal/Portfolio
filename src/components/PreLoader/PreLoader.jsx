@@ -38,7 +38,7 @@ const PreLoader = () => {
                             duration: 0.7,
                             ease: "easeOut"
                         }}
-                    >&copy;Portfolio 2024</motion.h3>
+                    >&copy;Portfolio 2025</motion.h3>
                 </div>
             </motion.div>
         </motion.div>

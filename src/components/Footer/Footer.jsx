@@ -17,7 +17,7 @@ const Footer = ({addBtnRef}) => {
 
     return (
         <div className="footer">
-            <div className="left">&copy;2024 Vanshul</div>
+            <div className="left">&copy;2025 Vanshul</div>
             <div className="right">
                 <a href="https://www.linkedin.com/in/vanshul-agarwal/" target='_blank'
                     ref={(el) => (btnRefs.current.push(el))}><FaLinkedinIn /></a>

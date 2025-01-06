@@ -70,12 +70,12 @@ const navLinks = [
         hash: "#about",
     },
     {
-        name: "Projects",
-        hash: "#projects",
-    },
-    {
         name: "Coding",
         hash: "#coding",
+    },
+    {
+        name: "Projects",
+        hash: "#projects",
     },
     {
         name: "Skills",
@@ -259,18 +259,18 @@ const codingProfilesData = {
         {
             image: contest,
             heading: "Contests",
-            data: "23",
+            data: "23+",
         },
         {
             image: question,
-            heading: "Submissions",
-            data: 672,
+            heading: "Problems",
+            data: "675+",
         },
-        {
-            image: chart,
-            heading: "Rating",
-            data: 1310,
-        },
+        // {
+        //     image: chart,
+        //     heading: "Rating",
+        //     data: 1310,
+        // },
         {
             image: upRightArrow,
             heading: "Max Rating",
@@ -281,29 +281,29 @@ const codingProfilesData = {
             heading: "Rank",
             data: "Pupil",
         },
-        {
-            image: ratings,
-            heading: "Max Rank",
-            data: "Pupil",
-        },
+        // {
+        //     image: ratings,
+        //     heading: "Max Rank",
+        //     data: "Pupil",
+        // },
     ],
 
     leetcode: [
         {
             image: contest,
             heading: "Contests",
-            data: "32",
+            data: "32+",
         },
         {
             image: question,
             heading: "Problems",
-            data: 680,
+            data: "680+",
         },
-        {
-            image: chart,
-            heading: "Rating",
-            data: 1732,
-        },
+        // {
+        //     image: chart,
+        //     heading: "Rating",
+        //     data: 1732,
+        // },
         {
             image: upRightArrow,
             heading: "Max Rating",
@@ -322,7 +322,7 @@ const codingProfilesData = {
         {
             image: blackFriday,
             heading: "Top %",
-            data: 10.85,
+            data: "<10.85",
         },
     ],
 
@@ -330,7 +330,7 @@ const codingProfilesData = {
         {
             image: contribution,
             heading: "Contributions",
-            data: 409,
+            data: "410+",
         },
         {
             image: streak,
@@ -340,12 +340,12 @@ const codingProfilesData = {
         {
             image: repository,
             heading: "Repositories",
-            data: 31,
+            data: "32+",
         },
         {
             image: views,
             heading: "Views",
-            data: "800+",
+            data: "900+",
         },
     ]
 }
